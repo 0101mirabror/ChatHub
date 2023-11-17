@@ -8,7 +8,8 @@
         <hr class="mt-0 mb-4">
         <form method="post" class="form-group">
             {% csrf_token %}
-            {{form|crispy}}
+            {% comment %}version1 {{form|crispy}} {% endcomment %}
+            {{form}}
             <p>Don't have an account?<a href="/signup"> Create one.</a></p>
             <button type="submit" class="btn btn-success">Login</button>
 
