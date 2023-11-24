@@ -3,6 +3,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+<<<<<<< HEAD
     <div class="sign-up form card " style="max-width: 600px">
         <h1 class="mt-2 m-5">User Login</h1>
         <hr class="mt-0 mb-4">
@@ -10,6 +11,15 @@
             {% csrf_token %}
             {% comment %}version1 {{form|crispy}} {% endcomment %}
             {{form.as_p}}
+=======
+    <div class="sign-up form" style="max-width: 600px">
+        <h1 class="mt-2">User Login</h1>
+        <hr class="mt-0 mb-4">
+        <form method="post" class="form-group">
+            {% csrf_token %}
+            {% comment %}version1 {{form|crispy}} {% endcomment %}
+            {{form}}
+>>>>>>> f6ffb7e6be780152c5f9e879381e149131c15ca0
             <p>Don't have an account?<a href="/signup"> Create one.</a></p>
             <button type="submit" class="btn btn-success">Login</button>
 

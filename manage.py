@@ -5,7 +5,11 @@ import sys
 
 
 def main():
+<<<<<<< HEAD
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_project.settings')
+=======
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'PyChat.settings')
+>>>>>>> f6ffb7e6be780152c5f9e879381e149131c15ca0
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

@@ -3,7 +3,11 @@ from .models import UserProfile, Friends, Messages
 from django.views.decorators.csrf import csrf_exempt
 from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser
+<<<<<<< HEAD
 from chatapp.serializers import MessageSerializer
+=======
+from chat.serializers import MessageSerializer
+>>>>>>> f6ffb7e6be780152c5f9e879381e149131c15ca0
 
 
 def getFriendsList(id):
