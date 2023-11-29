@@ -1,28 +1,26 @@
-{% extends "registration/RegisterBase.html" %}
+{% extends "base.html" %}
+{% load static %}
 {% block title %} Login {% endblock %}
 {% load crispy_forms_tags %}
 
 {% block content %}
-<<<<<<< HEAD
-    <div class="sign-up form card " style="max-width: 600px">
-        <h1 class="mt-2 m-5">User Login</h1>
-        <hr class="mt-0 mb-4">
-        <form method="post" class="form-group m-5">
-            {% csrf_token %}
-            {% comment %}version1 {{form|crispy}} {% endcomment %}
-            {{form.as_p}}
-=======
-    <div class="sign-up form" style="max-width: 600px">
-        <h1 class="mt-2">User Login</h1>
-        <hr class="mt-0 mb-4">
-        <form method="post" class="form-group">
-            {% csrf_token %}
-            {% comment %}version1 {{form|crispy}} {% endcomment %}
-            {{form}}
->>>>>>> f6ffb7e6be780152c5f9e879381e149131c15ca0
-            <p>Don't have an account?<a href="/signup"> Create one.</a></p>
-            <button type="submit" class="btn btn-success">Login</button>
-
-        </form>
+<div class="wrapper" style="background-image: url({% static 'images/background.png' %})">
+    <div class="row justify-content-center" style="padding-top: 100px">
+        <div class="col-8">
+            <div class="sign-up form card " style="max-width: 600px">
+                <h1 class="mt-2  text-center">User Login</h1>
+                <hr class="mt-0  ">
+                <form method="post" class="form-group m-5">
+                    {% csrf_token %}
+                    {% comment %} version1 {% endcomment %}
+                     {{form|crispy}}
+                    {% comment %} {{form.as_p}} {% endcomment %}
+                    <p>Don't have an account?<a href="/signup"> Create one.</a></p>
+                    <button type="submit" class="btn btn-success">Login</button>
+        
+                </form>
+            </div>
+        </div>
     </div>
+    
 {% endblock %}

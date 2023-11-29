@@ -6,4 +6,5 @@
 # version2 
 
 1. Renaming app and project folder.
-2. 
+2. static files are reconfigured.
+3. 

@@ -1,4 +1,4 @@
-{% load static %}
+/* {% load static %} */
 
 .sidenav{
     height: 100%;
@@ -49,7 +49,7 @@
 
 #myInput {
     box-sizing: border-box;
-    background-image: url("{% static 'images/searchicon.png' %}")
+    background-image: url("{% static 'images/searchicon.png' %}");
     background-position: 14px 12px;
     background-repeat: no-repeat;
     font-size: 16px;
@@ -62,7 +62,7 @@
 
 .dropdown {
     z-index: 10;
-    float: right;
+    /* float: right; */
     position: relative;
     display: inline-block;
     margin-right: 8px;

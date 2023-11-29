@@ -1,0 +1,39 @@
+/* index.html */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+     
+body {
+  background-image: url("{% static 'images/TodoBG.jpg' %}"); 
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  background-color: #F7F4ED;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 8px 8px;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+}
+
+.navbar-right a {
+  margin-left: 16px;
+}
+/* registrationapp */
+.wrapper{
+    background-position: center;
+    background-size: cover;
+    height: 750px;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+}

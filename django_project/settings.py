@@ -28,9 +28,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'chatapp.apps.ChatappConfig',
     'crispy_forms',
+    "crispy_bootstrap4",
     'registrationapp.apps.RegistrationappConfig',
     'rest_framework',
     'widget_tweaks',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -48,7 +50,7 @@ ROOT_URLCONF = 'django_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR , 'templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -113,14 +115,20 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static')
+# ]
+# STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
+
+STATIC_URL = '/static/'
+MEDIA_URL='/media/'
+MEDIA_ROOT = os.path.join( BASE_DIR, 'media')
+STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
-
